@@ -54,8 +54,9 @@ window.addEventListener('load', () => {
 
     // Eventlistener del Overlay
 
-    overlay.addEventListener('click', () => {
-        overlay.classList.remove('activo')
+    overlay.addEventListener('click', (evento) => {
+        //overlay.classList.remove('activo')
+        evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
     });
 
 });
