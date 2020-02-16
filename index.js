@@ -52,4 +52,10 @@ window.addEventListener('load', () => {
         overlay.classList.remove('activo');
     });
 
+    // Eventlistener del Overlay
+
+    overlay.addEventListener('click', () => {
+        overlay.classList.remove('activo')
+    });
+
 });
