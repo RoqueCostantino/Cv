@@ -169,3 +169,25 @@ section.overlay{
     right: -20px;
     top: -20px;
 }
+
+/*-----------------------------------*/
+/*Footer*/
+/*-----------------------------------*/
+
+footer .redes-sociales{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+footer .redes-sociales a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+
+
+}
