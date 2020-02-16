@@ -25,12 +25,12 @@ a{
 /*TITLE*/
 /*-----------------------------------*/
 
-.title {
+/*.title {
+    margin-top:30px;
+    margin-bottom: -20px;
     text-align: center;
-    margin: auto;
-    width: 220px;
     color: navy;
-}
+}*/
 
 /*-----------------------------------*/
 /*HEADER*/
@@ -186,8 +186,54 @@ footer .redes-sociales a{
     display: block;
     width: 60px;
     height: 60px;
-    margin: auto;
+    margin: 20px;
     text-align: center;
-
+    border-radius: 100px;
+    background: black;
+    color: white;
+    transition: .3s ease all;
 
 }
+
+footer .redes-sociales .github{background: #24292e;}
+footer .redes-sociales .facebook{background: #3b5998;}
+footer .redes-sociales .linkedin{background: #1da1f2;}
+
+footer .redes-sociales a i {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+footer .contenedor-icono:hover a{
+    animation: icono .5s ease;
+}
+
+@keyframes icono {
+    from{
+        transform: rotate3d(0,0,0,0);
+    }
+    to {
+        transform: rotate3d(0,1,0,360deg);
+    }
+}
+
+footer .infoper{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #c13584;
+}
+
+footer .infoper a {color: #000;
+                     font-weight: 700;}
+footer .infoper a:hover {text-decoration: underline;}
+
+@media screen and (max-width: 700px){
+    .Grid .item{
+        width: calc(50% - 20px);
+    }
+    form .search-bar{
+        width: 100%;
+    }
+}
+
